@@ -1,11 +1,14 @@
 import React from "react";
 
+import Illustration from "./illustration";
+
 export default function Demo() {
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col items-center justify-center pSm py-12 maxContainer">
       <header className="mb-8 text-center">
-        <h1 className="text-4xl font-bold text-primary-400 font-heading">
+        <h1 className="text-4xl font-bold text-primary-400 font-heading flexCenter gap-x-2">
           Welcome to NextJs15 Starter!
+          <Illustration />
         </h1>
         <p className="text-gray-700 mt-2">
           Kickstart your Next.js 15 project with the best tools, libraries, and
