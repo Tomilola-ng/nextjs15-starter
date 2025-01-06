@@ -14,3 +14,48 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+@layer utilities {
+  .maxContainer {
+    @apply mx-auto container;
+  }
+  .deadCenter {
+    @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
+  }
+  .bgText,
+  .textBg {
+    @apply bg-primary text-white;
+  }
+  .flexBetween {
+    @apply flex justify-between items-center;
+  }
+  .flexCenter {
+    @apply flex justify-center items-center;
+  }
+  .pSm {
+    @apply px-3 md:px-8 lg:px-12;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #0b112b;
+  border-radius: 50rem;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #0b112b;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
