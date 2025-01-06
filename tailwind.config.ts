@@ -67,6 +67,10 @@ export default {
           "5": "#9966ff",
         },
       },
+      fontFamily: {
+        inter: ["var(--font-inter)", "sans-serif"],
+        catamaran: ["var(--font-catamaran)", "sans-serif"],
+      },
       borderRadius: {
         lg: "16px",
         md: "12px",
@@ -74,8 +78,5 @@ export default {
       },
     },
   },
-  plugins: [
-    require("tailwindcss-animate"),
-    require("prettier-plugin-tailwindcss"),
-  ],
+  plugins: [require("tailwindcss-animate")],
 } satisfies Config;
