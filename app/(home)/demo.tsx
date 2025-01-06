@@ -25,6 +25,17 @@ export default function Demo() {
             <li>Pre-configured with API routes and user management</li>
             <li>Animations using Framer Motion</li>
             <li>Global styling with Tailwind and custom themes</li>
+            <li>Dark mode with Tailwind CSS</li>
+            <li>Sitemap generation with next-sitemap</li>
+            <li>API routes with Next.js API Routes</li>
+            <li>Error handling with Next.js Error Boundary</li>
+            <li>Editable logo component</li>
+            <li>General use component screens</li>
+            <li>Custom hooks with React Hooks</li>
+            <li>TypeScript type definitions with TypeScript</li>
+            <li>Utility functions and helpers</li>
+            <li>Pre-configured with global providers</li>
+            <li>Font management with Next.js Google Fonts</li>
           </ul>
         </section>
 
@@ -46,7 +57,9 @@ export default function Demo() {
             </li>
             <li>
               Edit your app at{" "}
-              <code className="bg-gray-100 p-1 rounded">/app/page.tsx</code>
+              <code className="bg-gray-100 p-1 rounded">
+                /app/(home)/page.tsx
+              </code>
             </li>
           </ol>
         </section>
