@@ -1,5 +1,5 @@
 export const _siteConfig = {
-  name: "Next15 Starter",
+  name: "NextJs15 Starter",
   domain: "nextjs15-starter.vercel.app",
   desc: "Kickstart your Next.js 15 project with the best tools, libraries, and practices.",
   menuLinks: [

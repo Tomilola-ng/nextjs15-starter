@@ -1,4 +1,4 @@
-# Next15 Starter
+# NextJs15 Starter
 
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](./LICENSE)
 [![Next.js](https://img.shields.io/badge/next.js-15.0-blue)](https://nextjs.org/)
@@ -7,7 +7,7 @@
 
 **Starter Template For Next.js Applications**
 
-The `next15-starter` is a highly optimized and feature-rich boilerplate for building modern web applications. It comes pre-configured with essential tools, libraries, and best practices, allowing you to focus on your application logic rather than setup.
+The `NextJs15-starter` is a highly optimized and feature-rich boilerplate for building modern web applications. It comes pre-configured with essential tools, libraries, and best practices, allowing you to focus on your application logic rather than setup.
 
 ## Features
 
@@ -42,13 +42,13 @@ Ensure you have the following installed:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/Tomilola-ng/next15-starter.git
+      git clone https://github.com/Tomilola-ng/nextjs15-starter.git
    ```
 
 2. Navigate to the project directory:
 
    ```bash
-   cd next15-starter
+      cd nextjs15-starter
    ```
 
 3. Install dependencies:
@@ -92,7 +92,7 @@ yarn start
 ## Project Structure
 
 ```plaintext
-next15-starter/
+NextJs15-starter/
 ├── api/                 # API routes and utilities
 ├── app/                 # Application pages and API routes
 ├── components/          # Reusable UI components

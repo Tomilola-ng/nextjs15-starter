@@ -5,7 +5,7 @@ export default function Demo() {
     <div className="min-h-screen bg-gray-50 flex flex-col items-center justify-center pSm py-12 maxContainer">
       <header className="mb-8 text-center">
         <h1 className="text-4xl font-bold text-primary-400 font-heading">
-          Welcome to Next15 Starter!
+          Welcome to NextJs15 Starter!
         </h1>
         <p className="text-gray-700 mt-2">
           Kickstart your Next.js 15 project with the best tools, libraries, and
@@ -74,7 +74,7 @@ export default function Demo() {
             Read Next.js Documentation
           </a>
           <a
-            href="https://github.com/Tomilola-ng/next15-starter"
+            href="https://github.com/Tomilola-ng/nextJs15-starter"
             target="_blank"
             rel="noopener noreferrer"
             className="w-full md:w-auto bg-gray-100 text-gray-800 text-center px-6 py-3 rounded-md shadow hover:bg-gray-200"
