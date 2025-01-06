@@ -119,7 +119,7 @@ This project is licensed under the [MIT License](./LICENSE).
 **Tomilola-ng**
 
 - GitHub: [Tomilola-ng](https://github.com/Tomilola-ng)
-- Twitter: [@YourTwitterHandle](https://twitter.com/tomilola_ng)
+- Twitter: [@Tomilola_ng](https://twitter.com/tomilola_ng)
 
 ## Acknowledgments
 
