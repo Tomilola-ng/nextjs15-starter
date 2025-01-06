@@ -93,12 +93,15 @@ yarn start
 
 ```plaintext
 next15-starter/
+├── api/                 # API routes and utilities
+├── app/                 # Application pages and API routes
 ├── components/          # Reusable UI components
+├── config/              # Site configuration
 ├── hooks/               # Custom hooks
-├── pages/               # Application pages and API routes
+├── lib/                 # Utility functions and helpers
+├── provider/            # Global providers
 ├── public/              # Static assets
 ├── styles/              # Global styles
-├── utils/               # Utility functions and helpers
 ├── types/               # TypeScript type definitions
 └── ...                  # Other configuration and boilerplate files
 ```
