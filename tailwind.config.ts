@@ -69,7 +69,7 @@ export default {
       },
       fontFamily: {
         inter: ["var(--font-inter)", "sans-serif"],
-        catamaran: ["var(--font-catamaran)", "sans-serif"],
+        heading: ["var(--font-heading)", "sans-serif"],
       },
       borderRadius: {
         lg: "16px",

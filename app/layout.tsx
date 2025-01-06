@@ -1,23 +1,23 @@
 import React from "react";
 
 import type { Metadata } from "next";
-import { Inter, Catamaran } from "next/font/google";
+import { Inter as BodyFont, Sora as HeadingFont } from "next/font/google";
 import { Toaster } from "sonner";
 
 import "../styles/globals.css";
 import GlobalProvider from "@/provider/global";
 import { _siteConfig } from "@/config/site";
 
-const inter = Inter({
+const inter = BodyFont({
   variable: "--font-inter",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700", "800", "900"],
 });
 
-const catamaran = Catamaran({
-  variable: "--font-catamaran",
+const heading = HeadingFont({
+  variable: "--font-heading",
   subsets: ["latin"],
-  weight: ["600", "700", "800", "900"],
+  weight: ["600", "700", "800"],
 });
 
 export const metadata: Metadata = {
@@ -33,7 +33,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${catamaran.variable} antialiased`}
+      className={`${inter.variable} ${heading.variable} antialiased`}
     >
       <body className={`${inter.className} antialiased`}>
         <GlobalProvider>{children}</GlobalProvider>
