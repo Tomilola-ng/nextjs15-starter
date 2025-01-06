@@ -8,7 +8,7 @@ import { NextResponse } from "next/server";
 const secretKey = "secret";
 const key = new TextEncoder().encode(secretKey);
 
-export async function encrypt(payload: any) {
+export async function encodeToken(payload: any) {
   return await new SignJWT(payload)
     .setProtectedHeader({ alg: "HS256" })
     .setIssuedAt()
@@ -16,7 +16,7 @@ export async function encrypt(payload: any) {
     .sign(key);
 }
 
-export async function decrypt(input: string): Promise<any> {
+export async function decodeToken(input: string): Promise<any> {
   const { payload } = await jwtVerify(input, key, {
     algorithms: ["HS256"],
   });
@@ -28,7 +28,7 @@ export async function setUser(
   accessTokenFromLogin: string = "",
 ) {
   const expires = new Date(Date.now() + 86400 * 1000);
-  const userSession = await encrypt({ user, expires });
+  const userSession = await encodeToken({ user, expires });
 
   (await cookies()).set("userSession", userSession, {
     expires,
@@ -41,7 +41,7 @@ export async function setUser(
 
 export async function setAccessToken(accessTokenFromLogin: string) {
   const expires = new Date(Date.now() + 86400 * 1000);
-  const accessToken = await encrypt({ accessTokenFromLogin, expires });
+  const accessToken = await encodeToken({ accessTokenFromLogin, expires });
 
   (await cookies()).set("accessToken", accessToken, {
     expires,
@@ -61,7 +61,7 @@ export async function getUser() {
   if (!userSession) return null;
 
   try {
-    const data: { user: _user; expires: string } = await decrypt(userSession);
+    const data: { user: _user; expires: string } = await decodeToken(userSession);
     if (new Date(data.expires) < new Date()) {
       return await removeUser();
     }
@@ -77,7 +77,7 @@ export async function getAccessToken() {
   if (!accessToken) return "";
 
   try {
-    const data = await decrypt(accessToken);
+    const data = await decodeToken(accessToken);
     if (new Date(data.expires) < new Date()) {
       return await removeAccessToken();
     }
