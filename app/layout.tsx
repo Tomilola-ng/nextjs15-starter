@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import { Toaster } from "@/components/ui/toaster";
+import { Toaster } from "sonner";
 
 import "./globals.css";
 
@@ -30,7 +30,21 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
-        <Toaster />
+        <Toaster
+          richColors
+          expand={true}
+          position="top-right"
+          pauseWhenPageIsHidden={true}
+          toastOptions={{
+            unstyled: true,
+            classNames: {
+              error: "bg-red-400",
+              success: "text-green-400",
+              warning: "text-yellow-400",
+              info: "bg-blue-400",
+            },
+          }}
+        />
       </body>
     </html>
   );
