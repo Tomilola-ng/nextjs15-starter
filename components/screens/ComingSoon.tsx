@@ -19,7 +19,7 @@ export default function ComingSoon() {
           }}
           className="relative"
         >
-          <h1 className="relative px-7 py-4 bg-background font-unbounded font-bold text-3xl sm:text-5xl bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary-dark">
+          <h1 className="relative px-7 py-4 bg-background font-catamaran font-bold text-3xl sm:text-5xl bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary-dark">
             Coming Soon!
           </h1>
         </motion.div>
