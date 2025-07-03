@@ -1,6 +1,5 @@
 import { ReactNode } from "react";
 import { ThemeProvider } from "./theme";
-import { AuthProvider } from "./auth";
 
 interface GlobalProviderProps {
   children: ReactNode;
@@ -9,7 +8,7 @@ interface GlobalProviderProps {
 const GlobalProvider = ({ children }: GlobalProviderProps) => {
   return (
     <ThemeProvider attribute="class" defaultTheme="system">
-      <AuthProvider>{children}</AuthProvider>
+      {children}
     </ThemeProvider>
   );
 };
